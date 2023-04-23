@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+
+#responsiveness img {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    object-fit: contain;
+    filter: invert(100%);
+}
+
+
+
+#responsiveness div{
+    width: 50px;
+    height: 50px;
+    float: left;
+
+}
+
+#responsiveness div:hover{
+    background: linear-gradient(to bottom,  #310B53, #2C0034); /* #440F74 #FA8072 310B53*/
+    cursor: pointer;
+}
+
+
+
+
+#school-button{
+    padding: 16px;
+    color: white;
+}
+
+#navbar a {
+    float: left;
+    vertical-align: center;
+    text-decoration: none;
+    padding: 16px;
+    color: white;
+
+}
+
+#navbar a:hover{
+    background: linear-gradient(to bottom,  #310B53, #2C0034); /* #440F74 #FA8072 310B53*/
+}
+
+#navbar{
+    width: 100%;
+    height: 50px;
+    vertical-align: center;
+    position: fixed;
+    background: linear-gradient(to bottom,  #310B53, #FA8072); /* #440F74 #FA8072 310B53*/
+    z-index: 1;
+}
+
+#home, #about, #schools{
+    scroll-margin-top: 50px;
+}
+
+#school-button{
+    cursor: pointer;
+    float: left;
+
+}
+
+#school-button:hover{
+    background: linear-gradient(to bottom,  #310B53, #2C0034); /* #440F74 #FA8072 310B53*/
+
+}
+
+#responsiveness{
+    float: right;
+}
+
+#home{
+    background-image: url("/img/home-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 -70px;
+    padding-top: 50px;
+    padding-bottom: 300px;
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+}
+
+#home a{
+    text-decoration: none;
+}
+
+#home h1{
+    font-family: "Copperplate Gothic Light";
+    letter-spacing: 0.2em;
+    font-size: 40px;
+    color: white;
+
+
+}
+
+#home p{
+    font-family: "Courier New", serif;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+}
+
+#home-div{
+    text-align: center;
+}
+
+#home img{
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+#home-clickable a{
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 50px;
+    color: white;
+}
+
+#school-menu {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    left: 100px;
+    background: linear-gradient(to bottom,  #FA8072, #310B53);}
+
+#home-div p{
+    word-spacing: 300px;
+}
+
+#about{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(to bottom,  #FA8072, #310B53);
+}
+
+#about-div{
+    width: 65%;
+
+}
+
+#about-part1{
+    display: flex;
+}
+
+#about-part1 img{
+    height: 200px;
+    width: 200px;
+
+}
+
+#about-part1 .text{
+    padding-top: 15px;
+    padding-right: 30px;
+    font-family: "Courier New", serif;
+    font-weight: bold;
+    padding-left: 10px;
+    width: 60%;
+}
+
+#about-part1 h1{
+    padding-bottom: 10px;
+}
+
+#about-part2{
+    padding-top: 30px;
+    font-family: "Courier New", serif;
+}
+
+#about-part2 h1{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#contacts{
+    padding-top: 10px;
+}
+
+#contacts a{
+    margin-right: 30px;
+    letter-spacing: 0.1rem;
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#about-part3{
+    text-align: center;
+    padding-top: 30px;
+    gap: 30px;
+    display: inline-block;
+    margin: auto;
+}
+
+
+
+#about-part3 a{
+    padding: 20px;
+}
+
+#about-part3 a img{
+    width: 8%;
+
+}
+
+#linkedin{
+    scale: 1.3;
+}
+
+#schools-sec{
+    background: url("/img/schools-background.jpg");
+    background-size: cover;
+    padding-bottom: 40px;
+}
+
+#school-div{
+    width: 55%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#schools-h1{
+    color: white;
+    font-weight: bold;
+    font-family: "Copperplate Gothic Light";
+    font-size: 40px !important;
+    margin-bottom: 20px !important;
+}
+
+#school-div h1{
+    color: white;
+    font-weight: bold;
+    font-family: "Copperplate Gothic Light";
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#elementary p{
+    color: #310B53;
+}
+
+#high p{
+    color: white;
+}
+
+#university p{
+    color: white;
+}
+
+#elementary{
+    background: #FA8072;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 40%;
+}
+
+#high{
+    background: #310B53;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 40%;
+}
+
+
+
+#university{
+    background: #2C0034;
+    padding: 20px;
+    border-radius: 40%;
+}
+
+#projects{
+    padding-top: 40px;
+
+    text-align: center;
+    padding-bottom: 40px;
+    background: linear-gradient(to bottom, #310B53,  #FA8072);
+}
+
+#projects-div{
+    width: 70%;
+    margin: auto;
+}
+
+#project1{
+    display:flex;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+#project1-text{
+    width: 60%;
+    background: lightcyan;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#project2{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 50px;
+
+}
+
+#project2 img{
+    order: 1;
+}
+
+#project2-text{
+    order: 2;
+    width: 60%;
+    background: lightcyan;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#project3{
+    display: flex;
+    gap: 100px;
+}
+
+#project3-text{
+    width: 60%;
+    padding: 20px;
+    background: lightcyan;
+    border-radius: 50%;
+
+}
+
+#projects img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#footer{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: #310B53;
+    color: white;
+    font-family: "Copperplate Gothic Light";
+}

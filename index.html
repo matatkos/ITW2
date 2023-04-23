@@ -5,8 +5,169 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <title>ITW Projekt 2</title>
         <link rel="stylesheet" href="css/style.css">
+        <script>
+            function pc() {
+                var width = document.getElementById("width-change");
+                if (width) {
+                    width.style.width = "100%";
+                }
+                document.getElementById("navbar").style.width = "100%";
+            }
+
+            function mobile() {
+                var width = document.getElementById("width-change");
+                if (width){
+                    width.style.width = "480px"
+                }
+                document.getElementById("navbar").style.width = "480px";
+            }
+            function show_schools(){
+                var school_menu = document.getElementById("school-menu");
+                if(school_menu.style.display === "unset"){
+                    school_menu.style.display = "none";
+                }
+                else{
+                    school_menu.style.display = "unset";
+                }
+            }
+
+            function school_clicked(){
+                var school_menu = document.getElementById("school-menu");
+                school_menu.style.display = "none";
+            }
+        </script>
     </head>
     <body>
-        <div>Hello world</div>
+        <div id="width-change">
+            <header>
+                <nav id="navbar">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <div id="schools">
+                        <div id="school-button" onclick="show_schools()">
+                            Schools
+                        </div>
+                        <div id="school-menu" onclick="school_clicked()">
+                            <a href="#schools-sec">Elementary</a>
+                            <a href="#high">High</a>
+                            <a href="#university">University</a>
+                        </div>
+
+                    </div>
+                    <a href="#projects">Projects</a>
+                    <div id="responsiveness" >
+                        <div id="pc" onclick="pc()" ><img src="./img/computer.png" alt="pc"></div>
+                        <div id="mobile" onclick="mobile()"><img src="./img/mobile.png" alt="mobile"></div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <section id="home">
+                    <div id="home-div">
+                        <img src="./img/myphoto.jpg" alt="myphoto"/>
+                        <a href="#home"><h1 id ="home-header">Matúš Snopek</h1></a>
+                        <p id="home-clickable">
+                            <a href="#projects">Programmer</a>
+                            <a href="#schools-sec">Student</a>
+                        </p>
+                    </div>
+                </section>
+                <section id="about">
+                    <div id="about-div">
+                        <div id="about-part1">
+                            <div class="text">
+                                <h1>ABOUT ME</h1>
+                                <p>Hello, I welcome you to my page, where you will find information about me, as a person, as a student and as a programmer. I started programming 1 and half year ago. Ever since then I was hooked up on concept of bettering myself in this field. It is very challenging environment, but challenging environment is what pushes people forward. And here I will document my journey.</p>
+                            </div>
+                            <img src="./img/myphoto.jpg" alt="myphoto"/>
+                        </div>
+                        <div id="about-part2">
+                            <h1>CONTACT ME</h1>
+                            <div id="contacts">
+                                <p>
+                                    <a href="http://localhost:63342/ITW2/index.html">0918 990 330</a>
+                                    <a href="http://localhost:63342/ITW2/index.html">matatkos@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="about-part3">
+                            <a href="http://localhost:63342/ITW2/index.html"><img src="./img/facebook.png" alt="facebook"></a>
+                            <a href="http://localhost:63342/ITW2/index.html"><img src="./img/instagram.png" alt="instagram"></a>
+                            <a href="http://localhost:63342/ITW2/index.html"><img id="linkedin" src="./img/linkedin.png" alt="linkedin"></a>
+                        </div>
+                    </div>
+                </section>
+                <section id="schools-sec">
+                    <div id="school-div">
+                        <h1 id="schools-h1">Schools</h1>
+                        <div id="elementary">
+                            <h1>Elementary School</h1>
+                            <p>I went to elementary school in years 2008-2017. The name of the school is Private Elementary School
+                                Štvorlístok. It was very nice school and there was few of us in the class. At the end of final year,
+                                there was only 11 of us in class. I made there many friends who I am friends with even now. The school
+                                gave me very good basics for math and languages.
+                            </p>
+                        </div>
+                        <div id="high">
+                            <h1>High School</h1>
+                            <p>I went to elementary school in years 2017-2021. The name of the is Gymnázium F. V. Sasinka. This
+                                school helped me develop my math and language skills even further. I spent there one of the best
+                                years of my life. I made there some of my lifelong friends and met a lot of people.
+                            </p>
+                        </div>
+                        <div id="university">
+                            <h1>University</h1>
+                            <p>
+                                Currently I am studying in Brno at school University of Technology. My faculty is faculty of
+                                Information Technology. I chose this school, because I wanted to learn something, that is going
+                                to be needed in the future. I never programmed before, and it was quite a challenge, but I am here,
+                                so I am doing something well.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="projects">
+                    <div id="projects-div">
+                        <div id="project1">
+                            <div id="project1-text">
+                                <h1>IOS Project 2</h1>
+                                <p>
+                                    This project was about making program that simulates making of H2O molecule.
+                                    Program uses semaphores and multi threading. It was supposed to show how to
+                                    handle multiple signals without inducing deadlock. Program is written in C.
+                                </p>
+                            </div>
+                            <a href="https://github.com/matatkos/IOS_Projekt2"><img src="./img/click-here.jpg " alt="click-here"></a>
+                        </div>
+                        <div id="project2">
+                            <div id="project2-text">
+                                <h1>IVS Project 2</h1>
+                                <p>
+                                    This project was aimed at making calculator in group. We were supposed to
+                                    simulate real life development as much as possible. This included documentation,
+                                    deadlines, meetings versioning etc. We made calculator in Python.
+                                </p>
+                            </div>
+                            <a href="https://github.com/matatkos/IVS-Project-2"><img src="./img/click-here.jpg " alt="click-here"></a>
+                        </div>
+                        <div id="project3">
+                            <div id="project3-text">
+                                <h1>IOS Project 1</h1>
+                                <p>
+                                    This project was aimed at making shell script which filters and prints info from input file.
+                                    Specifically, program was supposed to filter info about COVID patients.
+                                </p>
+                            </div>
+                            <a href="https://github.com/matatkos/IOS_Projekt1"><img src="./img/click-here.jpg " alt="click-here"></a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div id="footer">
+                    <a href=""><p>Author: Matúš Snopek</p></a>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
