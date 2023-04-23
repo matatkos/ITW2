@@ -78,7 +78,7 @@
 }
 
 #home{
-    background-image: url("/img/home-background.jpg");
+    background-image: url("./../img/home-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -231,7 +231,7 @@
 }
 
 #schools-sec{
-    background: url("/img/schools-background.jpg");
+    background: url("./../img/schools-background.jpg");
     background-size: cover;
     padding-bottom: 40px;
 }
